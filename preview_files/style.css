@@ -1,0 +1,162 @@
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.wrapper {width:100%;   overflow:hidden;}
+
+/* Global properties ======================================================== */
+
+body{ background: url(../images/bg.jpg) center 37% no-repeat; border:0; font:13px Arial, Helvetica, sans-serif; color:#fff; line-height:21px; min-width:960px; overflow:hidden}
+
+.css3{border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 0 0 4px rgba(0, 0, 0, .4); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .4); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .4); position: relative;}
+
+/* Global Structure ============================================================= */
+
+.container_16 {min-height:894px;}
+.spinner{ position:absolute; z-index:99; background: url(../images/bg.jpg) center 37% no-repeat #e75f19; width:100%; height:100%; top:0; left:0}
+.spinner > div{ position:absolute; z-index:99; background:url(../images/loader.gif) 50% 50% no-repeat; width:100%; height:100%; top:0; left:0}
+
+
+/* ============================= main layout ====================== */
+
+a{ color:#fff; text-decoration: underline; outline:none}
+a:hover{ text-decoration: none}
+h1{ padding:0 0 0 325px;}
+h2{ font-size:48px;font-family: 'Holtwood One SC', serif; text-shadow:1px 1px 1px rgba(0,0,0,.3); line-height:1.2em; color:#fff; padding:67px 0 27px 0; font-weight:normal;}
+h2 span{ display:block; font-size:24px; line-height:1.2em; margin-top:-11px;}
+h3{ font-size:24px; color:#271f1b; font-weight:bold; line-height:1.2em; padding:12px 0 18px 0; text-shadow:1px 1px 1px #f4a51e; letter-spacing:-1px;}
+h3.pad{ padding-top:0; margin-top:-5px; padding-bottom:0; margin-bottom:-2px; display:inline-block; width:180px;}
+.letter_spacing{ letter-spacing:-2px;}
+p{ padding-bottom:21px;}
+
+/* ============================= header ====================== */
+header{ height:122px;}
+
+#logo{ display:block; text-indent:-9999px; background:url(../images/logo.png) 0 0 no-repeat; width:310px; height:122px; position:relative;}
+#logo img{ position:absolute; top:40px; left:60px;}
+/* =============================  ====================== */
+.box{ min-height:674px; width:100%; position:relative; overflow:hidden}
+
+.menu{ position:absolute; width:540px; height:100%; background:url(../images/menu_bg.png) 110px 0 no-repeat; left:370px;}
+
+#menu { background:url(../images/menu_line.png) 0 84px no-repeat; padding-top:86px; width:221px;}
+#menu > li { padding-bottom:2px; background:url(../images/menu_line.png) 0 bottom no-repeat; position:relative; height:98px;}
+#menu > li > a{ display:block; height:98px; position:relative; text-decoration:none;}
+#menu > li > a span{ display:block; width: 100px; position:relative; font-size:14px; font-family: 'Holtwood One SC', serif; text-align:center; text-shadow:1px 1px 1px rgba(0,0,0,.3); line-height:98px;}
+#menu > li > a img{ position:absolute; top:0; right:18px;}
+#menu > li > a .img_hover{  position:absolute; left:-46px; top:-12px; width:310px; height:120px;}
+
+#menu.bg_none{ background:none;}
+#menu > .bg_none{ background:none}
+
+#menu > li:hover > a{} 
+#menu > li:hover{ background:none}
+#menu > li.active:hover{ background:url(../images/menu_line.png) 0 bottom no-repeat}
+#menu > .active > a span{ color:#181414; text-shadow:1px 1px 1px #f8a318;}
+
+.submenu_1{ position:absolute; top:80px; left:165px; width:215px; z-index:10}
+.submenu_1 li{ position:relative;height:50px; background:url(../images/submenu_bg.png) 0 0 no-repeat;}
+.submenu_1 li:hover{ background: url(../images/submenu_bg_active.png) 0 0 no-repeat}
+.submenu_1 .top{ background:url(../images/submenu_top.png) 0 0 no-repeat; height:49px;}
+.submenu_1 .bot{ background:url(../images/submenu_bot.png) 0 0 no-repeat; height:54px;}
+.submenu_1 .top:hover{ background: url(../images/submenu_top_active.png) 0 0 no-repeat}
+.submenu_1 .bot:hover{ background: url(../images/submenu_bot_active.png) 0 0 no-repeat}
+.submenu_1 a{ display:block; padding:0 32px; font-size:14px;font-family: 'Holtwood One SC', serif; color:#fff; line-height:49px; text-decoration:none}
+
+.submenu_2{ position:absolute; top:0px; left:172px; width:215px; z-index:11}
+
+
+/* ============================= content ====================== */
+
+#content{ float:right; width:600px;  position:relative;} 
+
+#content > ul > li{ position:relative;}
+
+.relative{ position:relative;}
+
+.pad_bot1{ padding-bottom:29px;}
+.marg_right1{ margin-right:20px;}
+.marg_right2{ margin-right:9px;}
+#page_services .pad_bot1{ padding-bottom:42px;}
+
+#content figure{ box-shadow: 2px 2px 3px rgba(255, 0, 0, .3); -moz-box-shadow: 2px 2px 3px rgba(255, 0, 0, .3); -webkit-box-shadow: 2px 2px 3px rgba(255, 0, 0, .3); position: relative; margin-bottom:5px;}
+
+.list1{ padding-top:3px;}
+.list1 li{ padding-bottom:2px; background:url(../images/line_hor1.jpg) right bottom no-repeat; line-height:38px;}
+.list1 a{ text-decoration:none; font-weight:bold;}
+.list1 a:hover{ color:#000}
+
+.button1{ display:inline-block; background:url(../images/button_bg.gif) top repeat-x #000000; font-size:24px; color:#fff; letter-spacing:-1px; font-weight:bold; text-decoration:none; padding:0 16px; line-height:44px;border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 1px 1px 4px rgba(0, 0, 0, .7); -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, .7); -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, .7); position: relative;}
+.button1 strong{ position:relative;}
+.button1 img{ display:block; position:absolute; top:0; left:0; width:100%; height:100%;}
+.button1:hover{ color:#5c4747}
+
+
+.folio dd{ position:relative}
+.folio .right{ width:168px; padding-bottom:0}
+.folio h3{ padding-bottom:29px;}
+.folio .dt{ padding-bottom:51px; overflow:hidden;position:relative; width:100%; height:221px;}
+.folio .dt > div{ position:absolute; top:0; left:0}
+
+.scroll{height:500px; width:570px;}
+.track{ background: url(../images/scroll_track.jpg) 0 0 no-repeat; left:560px; top:0px; width:3px; position:absolute; height:204px; padding:8px 0;}
+.shuttle{ width:14px; height:28px; background: url(../images/scroll_drag.png) 0 0 no-repeat; margin-left:-5px;}
+
+.folio ul{ width:100%; overflow:hidden;}
+.folio li{ float:left; width:160px; padding-right:20px;}
+.folio dd img{ padding-bottom:3px;}
+.folio dd p{ padding-bottom:14px;}
+.folio dd a{ position:relative; display:block}
+.folio dd a span{ position:absolute; background:url(../images/border.gif) 0 0 no-repeat; width:100%; height:100%; top:0; left:0; display:block;}
+
+.box_1{ background:url(/images/box_bg.png) repeat; box-shadow: 2px 2px 8px rgba(184, 35, 7, .7); -moz-box-shadow: 2px 2px 8px rgba(184, 35, 7, .7); -webkit-box-shadow: 2px 2px 8px rgba(184, 35, 7, .7); position: relative; padding:4px 22px 10px; line-height:20px;}
+.box_1 img{ padding-top:5px;}
+
+.link1{ text-decoration:none}
+.link1:hover{ text-decoration:underline}
+
+.clients p{ padding-top:2px; padding-bottom:24px;}
+.clients .img{ position:relative; display:block;}
+.clients .img span{ position:absolute; background:url(../images/border2.gif) 0 0 no-repeat; display:block; top:0; left:0; width:100%; height:100%}
+
+.address{ width:200px; line-height:20px;}
+
+#page_privacy p{ line-height:20px; padding-bottom:20px;}
+
+/* ============================= footer ====================== */
+
+footer { background:url(../images/bg_footer.png) 0 0 no-repeat; padding:30px 40px; height:38px; font-size:18px; color:#000000; font-weight:bold; letter-spacing:-1px; line-height:22px; text-shadow:1px 1px #3d2c26}
+footer a{ color:#000; text-decoration:none}
+footer a:hover{ color:#fff; text-shadow:1px 1px #2a1d19}
+
+#icons{ float:right; padding:4px 4px 0 0;}
+#icons li{ float:left; padding-left:11px; position:relative;}
+#icons .img_act{ position:absolute; top:0; right:0;}
+
+/* Tooltips */
+.aToolTip { background:#e75f19;  color:#fff;	margin:0; padding:2px 10px 3px; font-size:11px; line-height:1.2em; position: absolute;}
+.aToolTip .aToolTipContent { position:relative;	margin:0; padding:0;}
+
+/* ============================= forms ============================= */
+
+#ContactForm{ padding-top:19px;}
+#ContactForm .wrapper{ overflow:inherit; min-height:35px;}
+#ContactForm .success{ padding-bottom:15px; display:none}
+#ContactForm label{ position:relative;min-height:33px; display: inline-block;}
+#ContactForm .message{ height:151px;}
+#ContactForm  span{ display:block}
+#ContactForm .error, #ContactForm .empty{ font-size:10px; color:#fff; line-height:14px; display:none; width:100%}
+#ContactForm a{ margin-right:10px; float:left; margin-top:30px;}
+#ContactForm .input { margin:0;width:260px; height:15px; background: none; padding:9px 10px;color:#332620; font:13px Arial, Helvetica, sans-serif;}
+#ContactForm textarea { overflow: auto; width:379px; height:132px; background: none; padding:9px 10px;color:#332620; font:13px Arial, Helvetica, sans-serif;margin:0;}
+
+
+#ContactForm  .bg{ background:#fff; border-bottom:1px solid #f8c094;  float:left;}
+
+
+
